@@ -1,0 +1,16 @@
+{
+	"required": true,
+	"package": "gay.lemmaeof.phantomanta.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"MixinPhantomEntity",
+		"MixinPhantomSpawner",
+		"MixinSpawnHelper"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}

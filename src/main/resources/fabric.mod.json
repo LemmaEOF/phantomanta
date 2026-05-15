@@ -1,38 +1,24 @@
 {
 	"schemaVersion": 1,
-	"id": "modid",
+	"id": "phantomanta",
 	"version": "${version}",
-	"name": "Example Mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Phantomanta",
+	"description": "Transforms phantoms into manta rays that attack from the water at night.",
 	"authors": [
-		"Me!"
+		"LemmaEOF"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/lemmaeof/phantomanta"
 	},
-	"license": "CC0-1.0",
-	"icon": "assets/modid/icon.png",
+	"license": "BSD-3",
+	"icon": "assets/phantomanta/icon.png",
 	"environment": "*",
-	"entrypoints": {
-		"main": [
-			"com.example.ExampleMod"
-		],
-		"client": [
-			"com.example.client.ExampleModClient"
-		]
-	},
 	"mixins": [
-		"modid.mixins.json",
-		{
-			"config": "modid.client.mixins.json",
-			"environment": "client"
-		}
+		"phantomanta.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.19.2",
-		"minecraft": "~26.1.2",
-		"java": ">=25",
-		"fabric-api": "*"
+		"minecraft": "~1.21.11",
+		"java": ">=21"
 	}
 }
